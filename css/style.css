@@ -1,0 +1,15 @@
+body{
+    color: white;
+}
+
+.ms-header-bg-color{
+    background-color: #06131F;
+}
+
+.ms-main-bg-color{
+    background-color: #1D2D3C;
+}
+
+.ms-card-bg-color{
+    background-color: #112030 !important; 
+}
