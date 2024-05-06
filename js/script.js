@@ -25,7 +25,6 @@ createApp({
 
        selectSingleRecord(index){
         this.selectedRecord = this.records[index];
-        console.log(this.selectedRecord)
        }
     },
     mounted() {
