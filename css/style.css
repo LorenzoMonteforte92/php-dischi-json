@@ -13,3 +13,7 @@ body{
 .ms-card-bg-color{
     background-color: #112030 !important; 
 }
+
+.modal-content{
+    background-color: #112030 !important;
+}

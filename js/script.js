@@ -4,15 +4,28 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-           records: []
+           records: [],
+           selectedRecord: [],
         };
     },
     methods: {
-       getRecordsFromApi(){
-        axios.get('server.php')
+       getRecordsFromApi(index){
+
+        const queryParams = {
+                recordIndex: index
+            };
+
+        axios.get('server.php',{
+            params: queryParams
+        })
         .then((response) => {
         this.records = response.data
-      })
+        })
+       },
+
+       selectSingleRecord(index){
+        this.selectedRecord = this.records[index];
+        console.log(this.selectedRecord)
        }
     },
     mounted() {
